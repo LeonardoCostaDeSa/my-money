@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacoes de saida</title>
+</head>
+<body>
+    
+    <center>
+        <h1> Transacoes_de_saida </h1>
+    </center>
+    <hr/>
+    <table border="1">
+        <tr>
+            <th>Id da transacao</th>
+            <th>Data</th>
+            <th>Nome</th>
+            <th>Valor</th>
+        </tr>
+        {% for resultado in data%}
+        <tr>
+            <td>{{resultado.data}}</td>
+            <td>{{resultado.nome}}</td>
+            <td>{{resultado.valor}}</td>
+        </tr>
+        {% endfor%} 
+  
+    </table>
+</body>
+</html>
